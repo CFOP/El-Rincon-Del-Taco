@@ -1,0 +1,382 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+	color: #7C7C7C;
+}
+a:hover{
+	color:#292929;
+}
+html,body{
+  height:100%;
+  width:100%;
+}
+body{
+	background: #FFFCFC;
+}
+.contacto{
+	background:  #C6B21A;
+	height: 50%;
+}
+header{
+	color:#fff;
+	z-index: 40;
+	position: absolute;
+	top:0;
+	left: 0;
+	width: 100%;
+	text-align: center;
+}
+header img{
+	position: absolute;
+	left: 10px;
+	top:  0px;
+	width: 250px;
+}
+.contacto header img{
+	position: absolute;
+	left: 10px;
+	top: 0px;
+	width: 200px;
+}
+header>h1{
+	width: 100%;
+	color: #fff;
+	margin-top: 0;
+	height: 70px;
+	vertical-align: middle;
+	display: block;
+	line-height: 70px;
+	text-shadow:4px 4px 4px #000;
+	z-index: 50;
+}
+header.normal>h1{
+	background: #C6B21A;
+	height: 100px;
+	vertical-align: middle;
+	line-height: 100px;
+	-webkit-box-shadow: 4px 5px 2px 2px #000000;
+	box-shadow: 0px 10px 35px 2px #000000;	
+}
+header.contacto>h1{
+	background: #C6B21A;
+	height: 80px;
+	vertical-align: middle;
+	line-height: 70px;
+	-webkit-box-shadow: 4px 5px 2px 2px #000000;
+	box-shadow: 0px 10px 35px 2px #000000;	
+}
+.redes{
+	z-index: 55;
+	position: absolute;
+	float: right;
+	right: 0;
+	top: 0;	
+	font-size: 30px;
+	margin: 10px 10px;
+}
+.normal .redes{
+	margin: 45px 10px;
+}
+.redes a{
+	position: relative;
+	text-decoration: none;
+	-webkit-text-shadow: 4px 4px 6px #000000;
+	text-shadow: 4px 4px 6px#000000;
+	color:white;
+}
+.redes a:hover{
+	font-size: 40px;
+	color: #9FA39D;
+	-webkit-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	-ms-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	transition: all .5s ease;
+}
+nav{
+	position: relative;
+	z-index: 20;
+	margin: -10px auto;
+	width: 400px;
+	max-width: 1000px;
+    height: 150px; /*Le damos un alto fijo al menu*/
+    overflow: hidden; /*Agregamos un overflow hidden para que no se muestren elementos que sobrepasen los 150px de alto*/
+}
+nav ul{
+	list-style: none;
+}
+nav>ul{
+	display: table;
+	width: 100%;
+	background: #4C5C3A;
+	position: relative;
+}
+nav>ul li {
+	display: table-cell;
+}
+nav>ul>li {
+	width: 50%;
+}
+nav>ul>li>ul {
+	display: block;
+	position: absolute;
+	background: #4C5C3A;
+	left: 0;
+	right:0;
+	overflow: hidden;
+	height: 0%;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+nav>ul>li>ul>li {
+	width: 200px;
+}
+nav > ul > li:hover > ul {
+	display:block;
+	color:white;
+	height:100%;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+nav>ul li a{
+	color: #fff;
+	display: block;
+	line-height: 20px;
+	padding: 20px;
+	position: relative;
+	text-align: center;
+	text-decoration: none;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+nav>ul>li>ul>li a:hover{
+	background: #202A14;
+	color:#D6D6D6;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+nav>ul>li>a span{
+	background: #2C3424;
+	display: block;
+	height: 100%;
+	width: 100%;
+	left: 0;
+	position: absolute;
+	top: -55px;
+}	
+
+nav>ul>li>a span .icon{
+	display: block;
+	line-height: 60px;
+}
+nav>ul>li>a:hover>span{
+	top:0;
+	color:#D6D6D6;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+form{
+	position: relative;
+	z-index: 40;
+	margin: 200px auto;
+	width: 50%;
+	height: 100px;
+}
+.cc{
+	position: relative;
+	bottom: 30px;
+	margin: 0px auto;
+	width: 100%;
+	text-align: center;
+}
+.btn{
+	text-align: center;
+	text-decoration: none;
+	color: white;
+	border: white solid;
+	background: #C6B21A;
+	padding: 10px 30px;
+	font-weight: bold;
+	-moz-transition: background 1s ease;
+	-ms-transition: background 1s ease;
+	-o-transition: background 1s ease;
+	transition: background 1s ease;
+}
+.btn:hover{
+	color: #C6B21A;
+	background: white;
+	-webkit-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	-ms-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	transition: all .5s ease;
+}
+/* CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel, .carousel-inner, .carousel-inner>.item{
+	height: 100%;
+  z-index:0;	
+ }
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  /*height: 600px;	*/
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 100%;	
+  width: 100%;
+}
+
+/**/
+#titulo{
+	width: 100%;
+	position: absolute;
+	margin: -150px auto;
+	text-align: center;
+	font-weight: bold;
+	font-size: 43px;
+	color: white;
+	z-index: 30;
+}
+.imgTitulo{
+	z-index: 0;
+	position: relative;
+	margin-top: 0px;
+	height: 400px;
+	width: 100%;
+}
+.descripcion{
+	width: 90%;
+	margin: 0 auto;
+	font-size: 18px;
+}
+.descripcion p{
+	margin-top: 15px;
+}
+.descripcion img{
+	width: 200px;
+}
+.right{
+	float: right;
+}
+.left{
+	float: left;
+}
+/*
+	FOOTER
+*/
+footer {
+	margin-bottom: 0px;
+	text-align: center;
+	z-index: 30;
+	position: relative;
+	height: 40px;
+	width: 100%;
+	background: #4C5C3A;
+	color: white;
+}
+footer a{	
+	text-decoration: none;
+	color: white;
+}
+footer a:hover{
+	color: #BEBEBE;
+}
+.dos{
+	position: relative;
+	margin: 30px auto;
+	width: 750px;
+}
+.contenedor{
+	height: 300px;
+	width: 300px;
+	position: relative;
+	display: inline-block;
+	-webkit-perspective: 700;
+}
+.carta{
+	height: 100%;
+	width: 100%;
+	position: relative;
+	transform-style: preserve-3d;
+	transition: 2s;
+}
+.contenedor .izquierda{
+	float: left;
+}
+ #derecha{
+	float: right;
+}
+.carta:hover{
+	transform: rotateY(180deg);
+}
+.lado{
+	width: 100%;
+	height: 100%;
+	-webkit-backface-visibility: hidden; /* Chrome, Safari, Opera */
+    backface-visibility: hidden;
+	position: absolute; 
+	border: solid black;
+	text-align: center;
+}
+.lado > img{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+.lado > h2{
+	position: relative;
+	top: 225px;
+	color: white;
+	z-index: 10;
+	text-shadow: 3px 3px 3px #000000;
+
+}
+.lado p{
+	color: black;
+	font-size: 10px;
+	z-index: 0;	
+	font-weight: bold;
+	transform: rotateY(180deg);
+}
+.frente{
+	background: crimson;
+}
+.atras{
+	background: green;
+	transform: rotateY(180deg);
+}
